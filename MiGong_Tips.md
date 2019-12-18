@@ -47,8 +47,7 @@
 (''')
 
      原因是这样：
-     ![](one.png)  ![]("two.png") ![]("three.png")
-     ![](https://github.com/CaesarHolland/Algorithm-one/blob/master/four.png) ![]("five.png") ![]("six.png")
+<img src=".\pic.png" width=100px height=auto \>
      
      中间循环计算步数，利用上面得出的步数状态方程；
 **
