@@ -1,8 +1,3 @@
-/* 
- *  牛顿法解多项式的根
- *  输入:多项式系数c[],多项式度数n,求在[a,b]间的根
- *  输出:根 要求保证[a,b]间有根
- */
 #include<bits/stdc++.h>
 using namespace std;
 double fabs(double x)//求绝对值
