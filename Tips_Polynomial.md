@@ -10,7 +10,8 @@
     可解群的问题；
     可解群是群论中的一个重要内容，曾有一个著名的猜测叫Burnside猜测，
     说就奇数个元素的有限群是可解群。这个问题在1963年已被数学家Feit和
-    Thompson解决，啊证明很长，有闲的同学可以看论文——《太平洋数学杂志1963年刊》；结论就是，不可解群有很多例如n>=5时就是不可解群···
+    Thompson解决，啊证明很长，有闲的同学可以看论文——《太平洋数学杂志1963年刊》；结论就是，不可解群有很多例如n>=5时就是不
+    可解群···
     也就是说他真的是不可解的····
 ····但不代表我们弄不到近似解 , 今天我们主要通过牛顿法求一下近似解:
 
@@ -40,10 +41,12 @@ a和b为参数可能存在的范围，要保证参数在此范围内一定存在
 
 代码部分见库——Opt_ntPoly.cpp;
 
+---
+
 ## GSL库，可以利用该数学函数库求解多项式
 
 该库包含多项式求解器 **gsl_poly_complex_solve** ，可以一次性求出所有解，求解原理仍然是迭代法，但算法经过优化，提高精准度；具体文档部分可以在
-![GCL_POLY](https://www.gnu.org/software/gsl/doc/html/poly.html#c.gsl_poly_complex_workspace)找到。
+[GCL_POLY](https://www.gnu.org/software/gsl/doc/html/poly.html#c.gsl_poly_complex_workspace)找到。
 
 ### Code
 
