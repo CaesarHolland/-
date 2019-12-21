@@ -1,1 +1,2 @@
-# 杂记
+# 编程杂记
+所有的cpp程序都有对应的markdown文件，markdown文件包含对一类问题的说明和解答，格式都是Tips_Name.md，例如对迷宫问题的markdown文件名为Tips_Migong.md
