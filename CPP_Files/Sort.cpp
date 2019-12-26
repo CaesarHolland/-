@@ -1,7 +1,8 @@
 /*
     输入下标统一从1开始计算 
 */
-#include<iostream>
+#include<bits/stdc++.h>
+#include<Windows.h>
 using namespace std;
 int tmp[100010];
 // #define enter(i,n) for(int i=1 ; i<=n ; i++) cin>>arr[i];
@@ -15,15 +16,21 @@ void mergesort(int *arr , int a , int b);
 void selectSort(int *arr , int n);
 void heapSort(int *arr , int n);
 void print(int *arr , int n);
-void enter(int *arr , int n);
 
 int main()
 {
-    int n;
-    cin>>n;
-    int arr[n];
-    enter(arr,n);
-    // BinInsertSort(arr,n);
+    int n , a , b;
+    cout<<"Enter [Amount] and [Range of random figures]: "<<endl;
+    cin>>n>>a>>b;
+    int *arr = new int(n+1);
+    
+    for(int i=1 ; i<=n ; i++){
+        arr[i] = rand()%(b - a + 1) + a;   
+    }
+    
+    //程序计时
+    DWORD start_time = GetTickCount();
+    BinInsertSort(arr,n);
     // shellSort(arr,n);
     // bubbleSort(arr,n);
     // quick_sort(arr,1,n);
@@ -31,6 +38,9 @@ int main()
     // selectSort(arr,n);
     // heapSort(arr,n);
     print(arr,n);
+    DWORD end_time = GetTickCount();
+	cout << "The run time is:" << (end_time - start_time) << "ms" << endl;
+    
     return 0;
 }
 
@@ -175,9 +185,8 @@ void mergesort(int *arr , int a , int b){
 
 //附属组件
 void print(int *arr , int n){
-    for(int i=1 ; i<=n ; i++) cout<<arr[i]<<' ';
-}
-void enter(int *arr , int n){
-    for(int i=1 ; i<=n ; i++)
-        cin>>arr[i];
+    for(int i=1 ; i<=n ; i++){
+        if(i%10==0) cout<<arr[i]<<endl;
+        else cout<<arr[i]<<' ';
+    }
 }
