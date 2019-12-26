@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include<iostream>
 using namespace std;
 
 typedef pair<int, int> PII;//定义孪生数据体，用来存储坐标
@@ -48,7 +47,7 @@ int main() {
         }
     }
 
-    cout << bfs() << finall;
+    cout << bfs() << endl;
 
     return 0;
 }
