@@ -153,6 +153,7 @@ gnome··· 可以通过apt直接安装;
 
 面向的对象有——用户——用户组内成员——其他用户
 显示的格式为：right-right-right  对应  user-group member-other，例如下面：
+
 ![](Pictures/right.png)
 
 修改权限：chmod
